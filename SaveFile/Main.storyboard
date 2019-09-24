@@ -189,10 +189,35 @@
                     <view key="view" contentMode="scaleToFill" id="feE-zW-BPZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ptZ-3Y-0A5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gfN-sK-Lgk" firstAttribute="bottom" secondItem="ptZ-3Y-0A5" secondAttribute="bottom" id="En4-1j-eeT"/>
+                            <constraint firstItem="gfN-sK-Lgk" firstAttribute="trailing" secondItem="ptZ-3Y-0A5" secondAttribute="trailing" id="Hew-kY-TmE"/>
+                            <constraint firstItem="ptZ-3Y-0A5" firstAttribute="top" secondItem="gfN-sK-Lgk" secondAttribute="top" id="Pls-Cv-Y43"/>
+                            <constraint firstItem="ptZ-3Y-0A5" firstAttribute="leading" secondItem="gfN-sK-Lgk" secondAttribute="leading" id="UQ9-mF-PS0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gfN-sK-Lgk"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fog-6u-9gf"/>
+                    <navigationItem key="navigationItem" id="fog-6u-9gf">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="pBq-cE-t6a">
+                            <connections>
+                                <action selector="saveBarButtonTapWithSender:" destination="KQG-en-rgv" id="acA-U4-ebr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="ptZ-3Y-0A5" id="c02-Wh-dnB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9et-Gb-L1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

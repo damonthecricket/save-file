@@ -58,6 +58,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="Wl2-CC-Rar" id="E8A-HP-6sW"/>
+                                            <segue destination="KQG-en-rgv" kind="show" identifier="push.note" id="A68-kA-ucA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -180,6 +181,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abq-KT-5Y1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="602.89855072463774" y="65.625"/>
+        </scene>
+        <!--Note View Controller-->
+        <scene sceneID="uhC-Yw-gG3">
+            <objects>
+                <viewController id="KQG-en-rgv" customClass="NoteViewController" customModule="SaveFile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="feE-zW-BPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gfN-sK-Lgk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fog-6u-9gf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9et-Gb-L1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="807"/>
         </scene>
     </scenes>
 </document>

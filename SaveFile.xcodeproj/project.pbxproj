@@ -17,6 +17,7 @@
 		4ED414732337F1AF009E0C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED414722337F1AF009E0C38 /* Main.storyboard */; };
 		4ED414752337F34E009E0C38 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED414742337F34E009E0C38 /* NoteTableViewCell.swift */; };
 		4ED4147723393314009E0C38 /* NoteNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4147623393314009E0C38 /* NoteNameViewController.swift */; };
+		4ED41479233A3894009E0C38 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED41478233A3894009E0C38 /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4ED414722337F1AF009E0C38 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4ED414742337F34E009E0C38 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		4ED4147623393314009E0C38 /* NoteNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNameViewController.swift; sourceTree = "<group>"; };
+		4ED41478233A3894009E0C38 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				4ED414702337F19C009E0C38 /* MainViewController.swift */,
 				4ED414742337F34E009E0C38 /* NoteTableViewCell.swift */,
 				4ED4147623393314009E0C38 /* NoteNameViewController.swift */,
+				4ED41478233A3894009E0C38 /* NoteViewController.swift */,
 				4ED414622337F17B009E0C38 /* Assets.xcassets */,
 				4ED414722337F1AF009E0C38 /* Main.storyboard */,
 				4ED414672337F17B009E0C38 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED41479233A3894009E0C38 /* NoteViewController.swift in Sources */,
 				4ED4145D2337F178009E0C38 /* AppDelegate.swift in Sources */,
 				4ED4147723393314009E0C38 /* NoteNameViewController.swift in Sources */,
 				4ED4145F2337F178009E0C38 /* SceneDelegate.swift in Sources */,

@@ -63,6 +63,15 @@ class MainViewController: UIViewController, NoteNameViewControllerDelegate, UITa
         if segue.identifier == "present.note.name" {
             let vc = segue.destination as! NoteNameViewController
             vc.delegate = self
+        } else if segue.identifier == "push.note" {
+            if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                let folderPath = documentDirectory.appendingPathComponent(Constants.directory)
+                let indexPath = tableView?.indexPathForSelectedRow
+                let note = files[indexPath!.row]
+                let vc = segue.destination as! NoteViewController
+                vc.noteName = note
+                vc.folderURL = folderPath
+            }
         }
     }
     
